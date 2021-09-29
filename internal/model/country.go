@@ -512,3 +512,7 @@ var CountryContinent = map[string]string{
 	"ZM": "AF",
 	"ZW": "AF",
 }
+
+var CountryGeonameID = map[string]int{
+	"VN": 1562822,
+}

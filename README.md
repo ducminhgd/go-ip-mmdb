@@ -9,6 +9,16 @@ Data struct is followed `geoip2-golang`'s [reader](https://github.com/oschwald/g
 1. Go 1.16 or later.
 1. [`mmdbinspect`](https://github.com/maxmind/mmdbinspect)
 
+## Usage
+
+- Create an input file, in TSV format, with columns are: IP or network, City, City Geoname ID, Country ISO Code, ISP
+
+    ```
+    116.108.94.0/24	Ho Chi Minh	1566083	VN	Viettel
+    ```
+
+- Run `cd cmd && go run main.go`, or same commands.
+
 ## Using `mmdbinspect`
 
 City: `mmdbinspect -db GeoIP2-City.mmdb 8.8.8.8`
@@ -16,7 +26,7 @@ City: `mmdbinspect -db GeoIP2-City.mmdb 8.8.8.8`
 ```json
 [
     {
-        "Database": "GeoIP2-City_20210122/GeoIP2-City.mmdb",
+        "Database": "GeoIP2-City.mmdb",
         "Records": [
             {
                 "Network": "116.108.94.53/24",
