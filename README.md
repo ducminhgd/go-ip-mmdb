@@ -11,6 +11,8 @@ Data struct is followed `geoip2-golang`'s [reader](https://github.com/oschwald/g
 
 ## Usage
 
+- To create an empty `*.mmdb` file, please use a Perl script `tools/create-empty-mmdb.pl`
+
 - Create an input file, in TSV format, with columns are: IP or network, City, City Geoname ID, Country ISO Code, ISP
 
     ```
